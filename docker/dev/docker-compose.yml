@@ -27,6 +27,12 @@ services:
       - POSTGRES_HOST_AUTH_METHOD=trust
       - POSTGRES_PASSWORD=password
 
+  mailhog:
+    image: mailhog/mailhog
+    ports:
+      - '1025:1025'
+      - '1080:8025' # 1080 is the same as mailcatcher
+
 volumes:
   bundle: {}
   postgres: {}
