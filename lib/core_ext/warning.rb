@@ -1,4 +1,6 @@
-Warning.module_eval do
+klass = RUBY_VERSION < '2.4.0' ? Kernel : Warning
+
+klass.module_eval do
   class RaisedWarning < StandardError ; end
 
   def self.with_raised_warnings(&block)
