@@ -116,7 +116,7 @@ class CensorRule < ApplicationRecord
   end
 
   def make_regexp(encoding)
-    Warning.with_raised_warnings do
+    ::Warning.with_raised_warnings do
       Regexp.new(encoded_text(encoding), Regexp::MULTILINE)
     end
   rescue RaisedWarning => e
