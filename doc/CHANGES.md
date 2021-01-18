@@ -2,6 +2,7 @@
 
 ## Highlighted Features
 
+* Allow author to be an optional blog feed attribute (Gareth Rees)
 * Backpaged content tells external search engines not to index it (Gareth Rees)
 * Tweak change request button colours in admin interface (Gareth Rees)
 
