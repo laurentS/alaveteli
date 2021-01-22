@@ -4,6 +4,7 @@
 
 * Backpaged content tells external search engines not to index it (Gareth Rees)
 * Tweak change request button colours in admin interface (Gareth Rees)
+* Add Debian Buster support (Graeme Porteous)
 
 ## Upgrade Notes
 
