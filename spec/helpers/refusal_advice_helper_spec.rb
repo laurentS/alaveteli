@@ -36,4 +36,36 @@ describe RefusalAdviceHelper do
       it { is_expected.to eq true }
     end
   end
+
+  describe '#refusal_advice_form_data' do
+    subject { refusal_advice_form_data(info_request) }
+
+    context 'info request has incoming messages' do
+      let(:info_request) { FactoryBot.build(:info_request) }
+
+      it 'returns hash containing array of refusals params' do
+        reference = double(:reference, to_param: 'section-12')
+        message = double(:incoming_message, refusals: [reference])
+        allow(info_request).to receive(:incoming_messages).and_return([message])
+
+        is_expected.to eq({ refusals: ['section-12'] })
+      end
+    end
+
+    context 'info request has no incoming messages' do
+      let(:info_request) { FactoryBot.build(:info_request) }
+
+      it 'returns hash containing empty refusals array' do
+        is_expected.to eq({ refusals: [] })
+      end
+    end
+
+    context 'when there is no info request' do
+      let(:info_request) { nil }
+
+      it 'returns empty hash' do
+        is_expected.to eq({})
+      end
+    end
+  end
 end
