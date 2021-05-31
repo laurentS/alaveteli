@@ -105,7 +105,7 @@ GEM
       activesupport (>= 3.0.0)
       uniform_notifier (~> 1.11)
     byebug (11.0.1)
-    cancancan (3.2.1)
+    cancancan (3.2.2)
     capistrano (2.15.9)
       highline
       net-scp (>= 1.0.0)
@@ -202,7 +202,9 @@ GEM
     maxmind-db (1.0.0)
     method_source (0.9.2)
     mime-types (2.99.3)
-    mimemagic (0.3.5)
+    mimemagic (0.3.10)
+      nokogiri (~> 1)
+      rake
     mini_magick (4.11.0)
     mini_mime (1.0.2)
     mini_portile2 (2.4.0)
@@ -401,7 +403,7 @@ DEPENDENCIES
   bcrypt (~> 3.1.16)
   bootstrap-sass (~> 2.3.2.2)
   bullet (~> 6.1.2)
-  cancancan (~> 3.2.1)
+  cancancan (~> 3.2.2)
   capistrano (~> 2.15.0, < 3.0.0)
   capybara (~> 3.15.1)
   charlock_holmes (~> 0.7.7)
