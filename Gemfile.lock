@@ -202,7 +202,9 @@ GEM
     maxmind-db (1.0.0)
     method_source (0.9.2)
     mime-types (2.99.3)
-    mimemagic (0.3.5)
+    mimemagic (0.3.10)
+      nokogiri (~> 1)
+      rake
     mini_magick (4.11.0)
     mini_mime (1.0.2)
     mini_portile2 (2.4.0)
@@ -385,7 +387,8 @@ GEM
     websocket-extensions (0.1.5)
     will_paginate (3.3.0)
     xapian-full-alaveteli (1.4.11.1)
-    xml-simple (1.1.8)
+    xml-simple (1.1.9)
+      rexml
     xpath (3.2.0)
       nokogiri (~> 1.8)
     zip_tricks (5.5.0)
@@ -478,5 +481,5 @@ DEPENDENCIES
   webmock (~> 3.11.2)
   will_paginate (~> 3.3.0)
   xapian-full-alaveteli (~> 1.4.11.1)
-  xml-simple (~> 1.1.8)
+  xml-simple (~> 1.1.9)
   zip_tricks (~> 5.5.0)
