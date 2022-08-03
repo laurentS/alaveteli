@@ -293,7 +293,7 @@
                   <% if column_name == 'body' %>
                     <% truncated_value = truncate(h(value), length: 400, omission: '') { link_to '…', '#', title: 'Toggle hidden', class: 'toggle-hidden' } %>
                     <%= simple_format(truncated_value) %>
-                    <div style="display:none;"><%= simple_format(value) %></div>
+                    <div style="display:none;"><%= simple_format(h(value)) %></div>
                   <% elsif column_name == 'prominence' %>
                     <%= h highlight_prominence(value) %>
                   <% else %>
@@ -309,7 +309,7 @@
                 <% truncated_value = truncate(h(outgoing_message.raw_body), length: 400, omission: '') { link_to '…', '#', title: 'Toggle hidden', class: 'toggle-hidden' } %>
                 <%= simple_format(truncated_value) %>
                 <div style="display:none;">
-                  <%= simple_format(outgoing_message.raw_body) %>
+                  <%= simple_format(h(outgoing_message.raw_body)) %>
                 </div>
               </td>
             </tr>
@@ -358,11 +358,11 @@
                   <% if column_name =~ /^cached_.*?$/ %>
                     <% truncated_value = truncate(h(value), length: 400, omission: '') { link_to '…', '#', title: 'Toggle hidden', class: 'toggle-hidden' } %>
                     <%= simple_format(truncated_value) %>
-                    <div style="display:none;"><%= simple_format(value) %></div>
+                    <div style="display:none;"><%= simple_format(h(value)) %></div>
                   <% elsif column_name == 'prominence' %>
                     <%= h highlight_prominence(value) %>
                   <% else %>
-                    <%= simple_format(value.to_s) %>
+                    <%= simple_format(h(value.to_s)) %>
                   <% end %>
                 </td>
               </tr>
