@@ -319,10 +319,10 @@ GEM
     mime-types-data (3.2023.0218.1)
     mini_magick (4.12.0)
     mini_mime (1.1.2)
-    mini_portile2 (2.8.2)
+    mini_portile2 (2.8.4)
     mini_racer (0.8.0)
       libv8-node (~> 18.16.0.0)
-    minitest (5.18.1)
+    minitest (5.19.0)
     money (6.16.0)
       i18n (>= 0.6.4, <= 2)
     multi_json (1.15.0)
@@ -396,14 +396,14 @@ GEM
       actionpack (>= 5.0.1.rc1)
       actionview (>= 5.0.1.rc1)
       activesupport (>= 5.0.1.rc1)
-    rails-dom-testing (2.1.1)
+    rails-dom-testing (2.2.0)
       activesupport (>= 5.0.0)
       minitest
       nokogiri (>= 1.6)
     rails-html-sanitizer (1.6.0)
       loofah (~> 2.21)
       nokogiri (~> 1.14)
-    rails-i18n (7.0.5)
+    rails-i18n (7.0.8)
       i18n (>= 0.7, < 2)
       railties (>= 6.0.0, < 8)
     railties (7.0.6)
@@ -548,7 +548,7 @@ GEM
       rexml
     xpath (3.2.0)
       nokogiri (~> 1.8)
-    zeitwerk (2.6.8)
+    zeitwerk (2.6.11)
     zip_tricks (5.6.0)
 
 PLATFORMS
@@ -615,7 +615,7 @@ DEPENDENCIES
   rack-utf8_sanitizer (~> 1.9.0)
   rails (~> 7.0.6)
   rails-controller-testing
-  rails-i18n (~> 7.0.5)
+  rails-i18n (~> 7.0.8)
   recaptcha (~> 5.14.0)
   redis (~> 4.8.1)
   rolify (~> 6.0.1)
