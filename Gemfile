@@ -123,7 +123,7 @@ gem 'rolify', '~> 6.0.1'
 gem 'ruby-msg', '~> 1.5.0', mysociety: 'ruby-msg', branch: 'ascii-encoding'
 gem 'rubyzip', '~> 2.4.1'
 gem 'secure_headers', '~> 7.0.0'
-gem 'sidekiq', '~> 6.5.12'
+gem 'sidekiq', '~> 7.3.9'
 gem 'sidekiq-limit_fetch', '~> 4.4.1'
 gem 'statistics2', '~> 0.54'
 gem 'strip_attributes', mysociety: 'strip_attributes',
